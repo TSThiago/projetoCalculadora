@@ -1,5 +1,3 @@
-// 3. Crie uma função que receba os dois valores fornecidos pelo
-// usuário e faça uma subtração com eles, e retorne o resultado;
 // 4. Crie uma função que receba os dois valores fornecidos pelo
 // usuário e faça uma multiplicação com eles, e retorne o
 // resultado;
@@ -26,3 +24,9 @@ function Subtrair(){
     return subtracao
 }
 console.log(numA+ " - " +numB+ " = " +Subtrair())
+
+function Multiplicar(){
+    multiplicacao = numA * numB
+    return multiplicacao
+}
+console.log(numA+ " x " +numB+ " = " +Multiplicar())
