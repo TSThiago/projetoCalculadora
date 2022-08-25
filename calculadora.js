@@ -1,5 +1,3 @@
-// 2. Crie uma função que receba os dois valores fornecidos pelo
-// usuário e faça uma soma com eles, e retorne o resultado;
 // 3. Crie uma função que receba os dois valores fornecidos pelo
 // usuário e faça uma subtração com eles, e retorne o resultado;
 // 4. Crie uma função que receba os dois valores fornecidos pelo
@@ -21,4 +19,10 @@ function Somar(){
     soma = numA + numB
     return soma
 }
-console.log(Somar())
+console.log(numA+ " + " +numB+ " = " +Somar())
+
+function Subtrair(){
+    subtracao = numA - numB
+    return subtracao
+}
+console.log(numA+ " - " +numB+ " = " +Subtrair())
