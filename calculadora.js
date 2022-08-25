@@ -1,6 +1,3 @@
-// 4. Crie uma função que receba os dois valores fornecidos pelo
-// usuário e faça uma multiplicação com eles, e retorne o
-// resultado;
 // 5. Crie uma função que receba os dois valores fornecidos pelo
 // usuário e faça uma divisão com eles, e retorne o resultado;
 // 6. Faça com que seu usuário escolha qual função ele deseja fazer
@@ -30,3 +27,9 @@ function Multiplicar(){
     return multiplicacao
 }
 console.log(numA+ " x " +numB+ " = " +Multiplicar())
+
+function Dividir(){
+    divisao = numA / numB
+    return divisao
+}
+console.log(numA+ " / " +numB+ " = " +Dividir())
