@@ -1,5 +1,3 @@
-// 1. Você deve criar um programa que solicite ao seu usuário dois
-// números A e B.
 // 2. Crie uma função que receba os dois valores fornecidos pelo
 // usuário e faça uma soma com eles, e retorne o resultado;
 // 3. Crie uma função que receba os dois valores fornecidos pelo
@@ -16,8 +14,11 @@
 // 7. Crie um array para salvar o resultado das operações e crie
 // também uma função para exibir o histórico dos resultados.
 
-numA = prompt("Insira o primeiro número:")
-numB = prompt("Insira o segundo número:")
+numA = parseFloat(prompt("Insira o primeiro número:"))
+numB = parseFloat(prompt("Insira o segundo número:"))
 
-console.log(numA)
-console.log(numB)
+function Somar(){
+    soma = numA + numB
+    return soma
+}
+console.log(Somar())
