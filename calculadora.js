@@ -1,5 +1,3 @@
-// 5. Crie uma função que receba os dois valores fornecidos pelo
-// usuário e faça uma divisão com eles, e retorne o resultado;
 // 6. Faça com que seu usuário escolha qual função ele deseja fazer
 // com os números que ele inseriu, e depois de realizar essa
 // operação pergunte se ele deseja fazer outra ou encerrar a
@@ -7,29 +5,59 @@
 // 7. Crie um array para salvar o resultado das operações e crie
 // também uma função para exibir o histórico dos resultados.
 
-numA = parseFloat(prompt("Insira o primeiro número:"))
-numB = parseFloat(prompt("Insira o segundo número:"))
-
-function Somar(){
+function Somar() {
     soma = numA + numB
     return soma
 }
-console.log(numA+ " + " +numB+ " = " +Somar())
 
-function Subtrair(){
+function Subtrair() {
     subtracao = numA - numB
     return subtracao
 }
-console.log(numA+ " - " +numB+ " = " +Subtrair())
 
-function Multiplicar(){
+function Multiplicar() {
     multiplicacao = numA * numB
     return multiplicacao
 }
-console.log(numA+ " x " +numB+ " = " +Multiplicar())
 
-function Dividir(){
+function Dividir() {
     divisao = numA / numB
     return divisao
 }
-console.log(numA+ " / " +numB+ " = " +Dividir())
+
+continuar = true
+
+while (continuar == true) {
+    opcoes = prompt("O que deseja fazer? \n1 - Soma \n2 - Subtração \n3 - Multiplicação \n4 - Divisão")
+    while (opcoes < 1 || opcoes > 5) {
+        opcoes = prompt("Selecione uma opção válida: \n1 - Soma \n2 - Subtração \n3 - Multiplicação \n4 - Divisão")
+    }
+
+    numA = parseFloat(prompt("Insira o primeiro número:"))
+    numB = parseFloat(prompt("Insira o segundo número:"))
+
+    if (opcoes == 1) {
+        Somar
+        console.log(numA + " + " + numB + " = " + Somar())
+    }
+
+    if (opcoes == 2) {
+        Subtrair
+        console.log(numA + " - " + numB + " = " + Subtrair())
+    }
+
+    if (opcoes == 3) {
+        Multiplicar
+        console.log(numA + " x " + numB + " = " + Multiplicar())
+    }
+    Dividir
+    if (opcoes == 4) {
+
+        console.log(numA + " / " + numB + " = " + Dividir())
+    }
+
+    parar = prompt("Insira 1 para parar")
+    if (parar == 1) {
+        continuar = false
+    }
+}
