@@ -1,12 +1,9 @@
-// 7. Crie um array para salvar o resultado das operações e crie
-// também uma função para exibir o histórico dos resultados.
-
 resultados = []
 index = parseInt(0)
 
 function Somar() {
     soma = numA + numB
-    resultados[index] = soma
+    resultados [index] = soma
     index++
     return soma
 }
@@ -61,9 +58,9 @@ while (continuar == true) {
         Multiplicar
         console.log(numA + " x " + numB + " = " + Multiplicar())
     }
-    Dividir
+    
     if (opcoes == 4) {
-
+        Dividir
         console.log(numA + " / " + numB + " = " + Dividir())
     }
 
